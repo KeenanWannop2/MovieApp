@@ -4,23 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/background"
     tools:context=".view.MainActivity">
 
     <com.yarolegovich.discretescrollview.DiscreteScrollView
         android:id="@+id/movieCarousel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-      android:layout_centerInParent="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="50dp"
         app:dsv_orientation="horizontal" />
-    <ImageView
-        android:id="@+id/ivStageLights"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@drawable/stage_lights"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"/>
 
     <LinearLayout
         android:id="@+id/coverImageContainer"

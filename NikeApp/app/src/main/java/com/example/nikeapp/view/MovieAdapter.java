@@ -56,19 +56,15 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     static class ViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView image;
-        private final TextView tvMovieTitle;
         private final TextView tvMovieRating;
 
         public ViewHolder(View itemView) {
             super(itemView);
             image = itemView.findViewById(R.id.ivMoviePoster);
-            tvMovieTitle = itemView.findViewById(R.id.tvMovieTitle);
             tvMovieRating = itemView.findViewById(R.id.tvMovieRating);
         }
 
         public void setText(Result result) {
-            if (result.getTitle() != null)
-                tvMovieTitle.setText(result.getTitle());
             if (result.getVoteAverage() != null)
                 tvMovieRating.setText("" + result.getVoteAverage());
         }
