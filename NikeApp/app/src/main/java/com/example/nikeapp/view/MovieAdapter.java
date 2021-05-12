@@ -1,4 +1,4 @@
-package com.example.nikeapp;
+package com.example.nikeapp.view;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,12 +7,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.nikeapp.R;
 import com.example.nikeapp.model.MovieResponse;
 import com.example.nikeapp.model.Result;
 
