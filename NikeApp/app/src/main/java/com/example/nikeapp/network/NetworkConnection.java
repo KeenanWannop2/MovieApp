@@ -50,6 +50,7 @@ public class NetworkConnection {
         return new Interceptor() {
             @Override
             public Response intercept(Chain chain) throws IOException {
+                //Intercept and add api key to all calls to tmdb, only 1 in this case
                 Request original = chain.request();
                 HttpUrl originalHttpUrl = original.url();
 
