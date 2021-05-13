@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="300dp"
-    android:layout_height="500dp"
-    android:background="@drawable/ic_anonymous_generic_ticket">
+    android:layout_width="400dp"
+    android:layout_height="600dp"
+    android:background="@drawable/ticket">
 
     <ImageView
         android:id="@+id/ivMoviePoster"
         android:layout_width="200dp"
-        android:layout_height="400dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="25dp"
+        android:layout_height="470dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -22,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="9dp"
+            android:layout_marginBottom="40dp"
             android:src="@drawable/ic_baseline_star_rate_20"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/tvMovieRating" />
@@ -32,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="40dp"
             android:fontFamily="sans-serif-smallcaps"
             android:textColor="@color/white"
             android:layout_marginEnd="9dp"
