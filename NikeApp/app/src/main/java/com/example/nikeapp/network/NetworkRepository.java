@@ -15,7 +15,6 @@ public class NetworkRepository {
 
     private static NetworkRepository networkInstance;
     private final static String baseURL = "https://api.themoviedb.org/3/";
-    private final static String api_key = BuildConfig.THE_MOVIEDB_KEY;
     private MovieApiInterface apiService;
 
     public static NetworkRepository getInstance() {
@@ -31,8 +30,8 @@ public class NetworkRepository {
         apiService = NetworkConnection.getConnection(baseURL).create(MovieApiInterface.class);
     }
 
-    public LiveData<MovieResponse> getMovieData() {
-        return onRetrofitRequest(apiService.getMovies("en-US", 1, "US"));
+    public LiveData<MovieResponse> getMovieData(String apiKey) {
+        return onRetrofitRequest(apiService.getMovies(apiKey, "en-US", 1, "US"));
     }
 
     public LiveData<MovieResponse> onRetrofitRequest(Call<MovieResponse> call) {
